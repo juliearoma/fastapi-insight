@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: BoilerPlate Uvicorn",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}\\src",
+            "module": "uvicorn",
+            "args": [
+                "src.app.main:app",
+                "--reload",
+            ],
+            "jinja": true,
+            "env": {
+                "POETRY_VIRTUALENVS_PATH": "${workspaceFolder}\\.venv"
+            }
+        }
+    ]
+}
